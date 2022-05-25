@@ -1,0 +1,125 @@
+body {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f7e4d4;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container h1,
+body .container button {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+}
+
+body .container h1,
+body .container .subject,
+body .container .comment {
+  color: #467745;
+}
+
+body .container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 520px) {
+  body .container h1 {
+    font-size: 36px;
+    text-align: left;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 521px) {
+  body .container h1 {
+    font-size: 48px;
+  }
+}
+
+body .container .subject,
+body .container .comment,
+body .container .accept-label {
+  font-family: "Montserrat", sans-serif;
+}
+
+body .container .subject {
+  max-width: 480px;
+  height: 64px;
+  padding-left: 20px;
+  font-size: 16px;
+  background-color: white;
+}
+
+@media (max-width: 520px) {
+  body .container .subject {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+}
+
+body .container .comment {
+  max-width: 480px;
+  height: 120px;
+  margin: 20px 0;
+  padding: 20px 0 0 20px;
+  font-size: 16px;
+  background-color: white;
+}
+
+@media (max-width: 520px) {
+  body .container .comment {
+    width: calc(100% - 40px);
+    margin-left: 20px;
+  }
+}
+
+body .container .accept-container {
+  color: #467745;
+}
+
+@media (max-width: 520px) {
+  body .container .accept-container {
+    overflow-wrap: break-word;
+    margin-left: 20px;
+  }
+}
+
+body .container .accept-container .accept {
+  outline: none;
+}
+
+body .container .button-container {
+  margin: auto;
+}
+
+body .container .button-container button {
+  max-width: 280px;
+  height: 80px;
+  margin-top: 20px;
+  padding: 0 60px;
+  font-size: 21px;
+  color: #f7e4d4;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 140px;
+  background-color: #467745;
+}
+/*# sourceMappingURL=style.css.map */
